@@ -1,0 +1,19 @@
+{
+    "name": "meraki/test-suite",
+    "require": {
+        "phpunit/phpunit": "^8.0",
+        "php": "^7.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nathan Bishop",
+            "email": "nbish11@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Meraki\\": "src/"
+        }
+    }
+}
