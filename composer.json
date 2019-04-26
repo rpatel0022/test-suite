@@ -15,5 +15,8 @@
         "psr-4": {
             "Meraki\\": "src/"
         }
+    },
+    "scripts": {
+        "tests": "phpunit --version"
     }
 }
