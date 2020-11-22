@@ -15,7 +15,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Meraki\\": "src/"
+            "Meraki\\TestSuite\\": "src/"
         }
     },
     "scripts": {

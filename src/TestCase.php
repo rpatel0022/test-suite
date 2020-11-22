@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Meraki;
+namespace Meraki\TestSuite;
 
-use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\TestCase as PHPUnitTestCase;
 use Exception;
 use Closure;
 
@@ -14,7 +14,7 @@ use Closure;
  * @copyright 2019 Nathan Bishop
  * @license The MIT license.
  */
-abstract class TestSuite extends TestCase
+abstract class TestCase extends PHPUnitTestCase
 {
     /**
      * A better way for testing exceptions when using the 'arrange, act and assert' methodology.
