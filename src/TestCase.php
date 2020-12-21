@@ -28,4 +28,17 @@ abstract class TestCase extends PHPUnitTestCase
 
         $callbackThatWillThrow();
     }
+
+    /**
+     * Verify that an iterator has the correct values
+     *
+     * @param array $expected The expected iterator items in the order they should appear
+     * @param iterable $actual The iterable object that is being tested
+     */
+    public function assertIteratorValues(array $expected, iterable $actual): void
+    {
+        $actual = is_array($actual) ? $actual : iterator_to_array($actual);
+
+        $this->assertSame($expected, $actual);
+    }
 }
